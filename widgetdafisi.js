@@ -1,1 +1,40 @@
-var postTitle=new Array();var postUrl=new Array();var postMp3=new Array();var postDate=new Array();var postYear=new Array();var postMonth=new Array();var postYearMonth=new Array();var postYearMonth2=new Array();var postTanggal=new Array();var postLabels=new Array();var postBaru=new Array();var sortBy="titleasc";var tocLoaded=false;var numChars=250;var postFilter="";var numberfeed=0;var month2=["January","February","March","April","May","June","July","August","September","October","November","December"];function loadtoc(a){function b(){if("entry" in a.feed){var d=a.feed.entry.length;numberfeed=d;ii=0;for(var h=0;h<d;h++){var m=a.feed.entry[h];var e=m.title.$t;var l=m.published.$t.substring(0,10);var p=m.published.$t.substring(5,7);var g=m.published.$t.substring(8,10);var n=month2[parseInt(p,10)-1]+" "+m.published.$t.substring(0,4);var c="/"+m.published.$t.substring(0,4)+"_"+p+"_01_archive.html";var j;for(var f=0;f<m.link.length;f++){if(m.link[f].rel=="alternate"){j=m.link[f].href;break}}var o="";for(var f=0;f<m.link.length;f++){if(m.link[f].rel=="enclosure"){o=m.link[f].href;break}}postTitle.push(e);postDate.push(l);postUrl.push(j);postYearMonth.push(n);postYearMonth2.push(c);postTanggal.push(g)}}}b();displayToc2();document.write('<br/><a href="https://infoalya.com/" style="font-size: 8px; text-decoration:none; color: #616469;">.:infoalya.com:.</a></br/>')}function displayToc2(){var a=0;var b=0;while(b<postTitle.length){temp1=postYearMonth[b];document.write("<p/>");document.write('<p><a href="'+postYearMonth2[b]+'">'+temp1+"</a></p><ul>");firsti=a;do{document.write("<li>");document.write("["+postTanggal[a]+'] <a href="'+postUrl[a]+'">'+postTitle[a]+"</a>");document.write("</li>");a=a+1}while(postYearMonth[a]==temp1);b=a;document.write("</ul>");if(b>postTitle.length){break}}};
+/**
+ * BLOGGER TOC WITH ACCORDION EFFECT (SORT BY LABEL)
+ * ---------------------------------------------------
+ * by Taufik Nurrohman
+ * URL: http://gplus.to/tovic
+ * Modified by Arlina Fitriyani
+ * URL: http://gplus.to/arlina
+ * ---------------------------------------------------
+ */
+
+/*
+var toc_config = {
+	url: 'http://arlinadesign.blogspot.com',
+	containerId: 'table-of-content',
+	showNew: 15,
+	newText: ' <strong style="font-weight:normal;font-style:normal;color:#fff;font-size:11px;background:#5c5a78;padding:1px 6px 3px 6px;line-height:normal;float:right;border-radius:3px;">baru</strong>',
+	sortAlphabetically: {
+		thePanel: true,
+		theList: true
+	},
+	maxResults: 9999,
+	activePanel: 1,
+	slideSpeed: {
+		down: 400,
+		up: 400
+	},
+	slideEasing: {
+		down: null,
+		up: null
+	},
+	slideCallback: {
+		down: function() {},
+		up: function() {}
+	},
+	clickCallback: function() {},
+	jsonCallback: '_toc',
+	delayLoading: 0
+};
+*/
+!function(e,o){var t=o.getElementById(toc_config.containerId),c=o.getElementsByTagName("head")[0],n=[];e[toc_config.jsonCallback]=function(e){for(var o,c,i=e.feed.entry,a=e.feed.category,l="",s=0,d=a.length;d>s;++s)n.push(a[s].term);for(var r=0,f=i.length;f>r;++r)(toc_config.showNew||toc_config.showNew>0)&&r<toc_config.showNew+1&&(i[r].title.$t+=" %new%");i=toc_config.sortAlphabetically.theList?i.sort(function(e,o){return e.title.$t.localeCompare(o.title.$t)}):i,toc_config.sortAlphabetically.thePanel&&n.sort();for(var g=0,h=n.length;h>g;++g){l+='<h3 class="toc-header">'+n[g]+"</h3>",l+='<div class="toc-content"><ol>';for(var _=0,p=i.length;p>_;++_){o=i[_].title.$t;for(var w=0,u=i[_].link.length;u>w;++w)if("alternate"==i[_].link[w].rel){c=i[_].link[w].href;break}for(var v=0,m=i[_].category.length;m>v;++v)n[g]==i[_].category[v].term&&(l+='<li><a href="'+c+'">'+o.replace(/ \%new\%$/,"")+"</a>"+(o.match(/\%new\%/)?" "+toc_config.newText:"")+"</li>")}l+="</ol></div>"}t.innerHTML=l,"undefined"!=typeof jQuery&&($("#"+toc_config.containerId+" .toc-content").hide(),$("#"+toc_config.containerId+" .toc-header").click(function(){$(this).hasClass("active")||(toc_config.clickCallback(this),$("#"+toc_config.containerId+" .toc-header").removeClass("active").next().slideUp(toc_config.slideSpeed.up,toc_config.slideEasing.up,toc_config.slideCallback.up),$(this).addClass("active").next().slideDown(toc_config.slideSpeed.down,toc_config.slideEasing.down,toc_config.slideCallback.down))}).eq(toc_config.activePanel-1).addClass("active").next().slideDown(toc_config.slideSpeed.down,toc_config.slideEasing.down,toc_config.slideCallback.down))};var i=o.createElement("script");i.src=toc_config.url.replace(/\/$/,"")+"/feeds/posts/summary?alt=json-in-script&max-results="+toc_config.maxResults+"&callback="+toc_config.jsonCallback,"onload"==toc_config.delayLoading?e.onload=function(){c.appendChild(i)}:e.setTimeout(function(){c.appendChild(i)},toc_config.delayLoading)}(window,document);
