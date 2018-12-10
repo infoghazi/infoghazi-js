@@ -4,6 +4,8 @@
  * by Taufik Nurrohman
  * URL: http://gplus.to/tovic
  * Modified by Arlina Fitriyani
+ * URL: http://gplus.to/arlina
+ * Modified by Sam Hidayat
  * URL: https://infoghazi.com
  * ---------------------------------------------------
  */
