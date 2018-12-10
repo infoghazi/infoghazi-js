@@ -4,13 +4,13 @@
  * by Taufik Nurrohman
  * URL: http://gplus.to/tovic
  * Modified by Arlina Fitriyani
- * URL: http://gplus.to/arlina
+ * URL: https://infoghazi.com
  * ---------------------------------------------------
  */
 
 /*
 var toc_config = {
-	url: 'http://arlinadesign.blogspot.com',
+	url: 'https://infoghazi.com',
 	containerId: 'table-of-content',
 	showNew: 15,
 	newText: ' <strong style="font-weight:normal;font-style:normal;color:#fff;font-size:11px;background:#5c5a78;padding:1px 6px 3px 6px;line-height:normal;float:right;border-radius:3px;">baru</strong>',
