@@ -1,37 +1,37 @@
 {
-  "name": "KompiAjaib.com",
-  "short_name": "KompiAjaib",
-  "start_url": "https://www.kompiajaib.com/?m=1",
+  "name": "AGExcel.Net",
+  "short_name": "AGExcel",
+  "start_url": "https://www.agexcel.net/?m=1",
   "display": "standalone",
   "background_color": "#fff",
-  "theme_color": "#2B0C93",
-  "description": "Blog yang membahas tentang tutorial, trik, dan widget Blogger juga SEO dan Internet.",
+  "theme_color": "#005b29",
+  "description": "Blog yang membahas tentang tutorial, trik, dan semua hal tentang EXCEL.",
   "icons": [{
-    "src": "https://cdn.staticaly.com/img/4.bp.blogspot.com/-_fuRWmsvvhw/VwNgCd9RvqI/AAAAAAAAmGo/IFhwNoh-_OIEsUORb-ie9gauR5HQgKAhQ/s48/android-icon-192x192.png",
+    "src": "https://cdn.statically.io/img/1.bp.blogspot.com/-ibHgrYOVTSc/XUJhfU6upLI/AAAAAAAACcQ/44zNx8c32K8jwCS0Zs06EPAFNU0od1KXQCEwYBhgL/s48/48.png",
     "sizes": "48x48",
     "type": "image/png"
   }, {
-    "src": "https://cdn.staticaly.com/img/4.bp.blogspot.com/-_fuRWmsvvhw/VwNgCd9RvqI/AAAAAAAAmGo/IFhwNoh-_OIEsUORb-ie9gauR5HQgKAhQ/s72/android-icon-192x192.png",
+    "src": "https://cdn.statically.io/img/1.bp.blogspot.com/-NTBvZmwZWdw/XUJhfRE1KKI/AAAAAAAACcU/RCFB39V8j2Iedum1tS1kXnJAHlEuh6WCQCEwYBhgL/s72/72.png",
     "sizes": "72x72",
     "type": "image/png"
   }, {
-    "src": "https://cdn.staticaly.com/img/4.bp.blogspot.com/-_fuRWmsvvhw/VwNgCd9RvqI/AAAAAAAAmGo/IFhwNoh-_OIEsUORb-ie9gauR5HQgKAhQ/s96/android-icon-192x192.png",
+    "src": "https://cdn.statically.io/img/1.bp.blogspot.com/-zKS5byQmFV0/XUJhfmN-GsI/AAAAAAAACcY/c9hBy9f5LHYE7QLK8eGYlVbRhXC0VPXiQCEwYBhgL/s96/96.png",
     "sizes": "96x96",
     "type": "image/png"
   }, {
-    "src": "https://cdn.staticaly.com/img/4.bp.blogspot.com/-_fuRWmsvvhw/VwNgCd9RvqI/AAAAAAAAmGo/IFhwNoh-_OIEsUORb-ie9gauR5HQgKAhQ/s144/android-icon-192x192.png",
+    "src": "https://cdn.statically.io/img/1.bp.blogspot.com/-c9DnIhpLb1g/XUJhedxiO_I/AAAAAAAACcE/m_J2SWY0b4Q5KB1zlWpWUyTjqXuZsvkHQCEwYBhgL/s144/144.png",
     "sizes": "144x144",
     "type": "image/png"
   }, {
-    "src": "https://cdn.staticaly.com/img/4.bp.blogspot.com/-_fuRWmsvvhw/VwNgCd9RvqI/AAAAAAAAmGo/IFhwNoh-_OIEsUORb-ie9gauR5HQgKAhQ/s168/android-icon-192x192.png",
+    "src": "https://cdn.statically.io/img/1.bp.blogspot.com/-OmQvmXYM-Mw/XUJheT5qmfI/AAAAAAAACcM/fPMoMmp6oekjMOdrFfxb6NnKUn6Qh4CvACEwYBhgL/s168/168.png",
     "sizes": "168x168",
     "type": "image/png"
   }, {
-    "src": "https://cdn.staticaly.com/img/4.bp.blogspot.com/-_fuRWmsvvhw/VwNgCd9RvqI/AAAAAAAAmGo/IFhwNoh-_OIEsUORb-ie9gauR5HQgKAhQ/s192/android-icon-192x192.png",
+    "src": "https://cdn.statically.io/img/1.bp.blogspot.com/-mRlIJki-T2o/XUJheQPIZnI/AAAAAAAACcI/7UThgf5xPnYA7rgq0NdmWFAlsz5LGo41ACEwYBhgL/s192/192.png",
     "sizes": "192x192",
     "type": "image/png"
   }, {
-    "src": "https://cdn.staticaly.com/img/3.bp.blogspot.com/-ccUYbxIIDvM/VqSSu92MnZI/AAAAAAAAksc/HExcuDOoKIQ/s512/logo.png",
+    "src": "https://cdn.statically.io/img/1.bp.blogspot.com/-PpkZgnGI-ds/XUJjabFy32I/AAAAAAAACc0/USrzSqRtemcvdNAQ0S0Q6Z7Y9xLJGM7MQCLcBGAs/s512/512.png",
     "sizes": "512x512",
     "type": "image/png"
   }]
